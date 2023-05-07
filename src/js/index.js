@@ -1,19 +1,21 @@
 function tudo(){
 
-	const botaoTrailer = document.querySelector(".botao-trailer"),botaoFecharModal = document.querySelector(".fechar-modal"), video = document.getElementById("video"), modal = document.querySelector(".modal"), linkDoVideo = video.src  ;
-
-	function alternarModal(){
-		modal.classList.toggle("aberto");
-	}
+	const botaoTrailer = document.querySelector(".botao-trailer");
+	const botaoFecharModal = document.querySelector(".fechar-modal");
+	const video = document.getElementById("video");
+	const modal = document.querySelector(".modal");
 
 	botaoTrailer.addEventListener("click", () => {
-		alternarModal();
-		video.setAttribute("src", linkDoVideo);
+		modal.classList.toggle("aberto");
+		video.setAttribute("src", video.src);
 	});
 
 	botaoFecharModal.addEventListener("click", () => {
-		alternarModal();
+		modal.classList.toggle("aberto");
 		video.setAttribute("src", "");
 	});
 }
+
+
+
 tudo();
