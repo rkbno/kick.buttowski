@@ -1,6 +1,6 @@
 @media (max-width: 1270px) {
     body {
-       background-color: #f44336;
+       background-color: #000;
     }
 
     .fundo-video {
@@ -27,10 +27,6 @@
     .container .descricao {
         color: #ffffff;
         text-align: center;
-    }
-
-    .container .botao-trailer {
-        background-color: #263238;
     }
 }
 
