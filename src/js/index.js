@@ -1,11 +1,7 @@
 function tudo(){
 
-	const botaoTrailer = document.querySelector(".botao-trailer");
-	const botaoFecharModal = document.querySelector(".fechar-modal");
-	const video = document.getElementById("video");
-	const modal = document.querySelector(".modal");
-	const linkDoVideo = video.src;
-	
+	const botaoTrailer = document.querySelector(".botao-trailer"),botaoFecharModal = document.querySelector(".fechar-modal"), video = document.getElementById("video"), modal = document.querySelector(".modal"), linkDoVideo = video.src  ;
+
 	function alternarModal(){
 		modal.classList.toggle("aberto");
 	}
@@ -20,5 +16,4 @@ function tudo(){
 		video.setAttribute("src", "");
 	});
 }
-
 tudo();
